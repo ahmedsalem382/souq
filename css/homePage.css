@@ -1,0 +1,244 @@
+
+/* options */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: DroidNaskh,"Helvetica Neue",Helvetica,Helvetica,Arial,sans-serif;
+    background: #FAFAFA;
+}
+.container {
+    width: 1300px;
+    margin: auto;
+}
+
+/*start upperNavbar*/
+
+.upperNavbar {
+    background: rgb(35,47,62);
+    font-size: 14px;
+}
+.upperNavbar a {
+    text-decoration: none;
+    color: #E7E9EA
+}
+.upperNavbar .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.upperNavbar .content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+.upperNavbar .content ul li {
+    display: inline-block;
+    cursor: pointer;
+}
+.upperNavbar .content ul li:not(:first-of-type) {
+    margin-left: 10px;
+}
+.upperNavbar .content ul {
+    margin-left: -10px;
+}
+.upperNavbar .content .infoPartOne {
+    color: #E7E9EA
+}
+.upperNavbar .content .infoPartOne li:nth-child(2) {
+    transform: translateY(6px);
+    height: 23px;
+}
+.upperNavbar .content .infoPartOne li:not(:nth-child(2)){
+    border-left: 1px solid rgb(188,192,196);
+    padding-left: 10px;
+}
+.upperNavbar .content .infoPartOne li:first-child {
+    border-left: none;
+    border-right: 1px solid rgb(188,192,196);
+    padding-right: 10px;
+}
+.upperNavbar .content .infoPartOne li img {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+.upperNavbar .content .infoPartTwo {
+    color:#B8BBC0;
+    transform: translateY(4px);
+}
+.upperNavbar .content .infoPartTwo i {
+    margin-left: 5px;
+}
+.upperNavbar .content .infoPartTwo i{
+    transform: rotateY(180deg);
+}
+
+/*End upperNavbar*/
+
+/*start navbar*/
+
+.navbar a {
+    text-decoration: none;
+    color: #777;
+}
+.navbar .contnet {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .contnet .partOne .car i{
+    color: #008BFF;
+    margin-right: 10px;
+}
+.navbar .contnet .partOne .logIn {
+    color: #777;
+    border-left: 1px solid #dfdfdf;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.navbar .contnet .partThree {
+    padding-top: 5px;
+}
+.navbar .contnet .partOne,
+.navbar .contnet .partTwo {
+    padding-top: 15px;
+}
+.navbar .contnet .partTwo {
+    width: 825px;
+    height: 40px;
+    display: flex;
+}
+.navbar .contnet .partTwo input {
+    width: calc(825px - 66px);
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid #DCDCDC;
+    direction: rtl;
+}
+.navbar .contnet .partTwo input::placeholder {
+    color: #DCDCDC;
+    padding-left: 630px;
+    font-size: 18px;
+}
+.navbar .contnet .partTwo label {
+    background: #008BFF;
+    width: 66px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.navbar .contnet .partTwo label:hover {
+    background-color: #006fcc;
+ }
+.navbar .contnet .partTwo label i {
+    color: #fff;
+}
+
+/*End navabr*/
+
+/*start categrious*/
+
+.categrious {
+    background: #E8EBEE;
+}
+.categrious ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-weight: bolder;
+    color: #696D75;
+    margin: 0;
+    margin-top: 5px;
+}
+.categrious ul li {
+    cursor: pointer;
+}
+
+
+/*start categrious*/
+
+/*start products*/
+.myProducts {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+.myProducts > div {
+    border: 1px solid #ddd;
+    margin: 5px;
+    flex-basis: 25%;
+    padding: 20px;
+}
+.myProducts > div img {
+    height: 300px;
+}
+.myProducts .ig {
+    position: relative;
+    height: 300px;
+}
+.myProducts .ig:hover > span {
+    opacity: 1;
+}
+.myProducts .ig span {
+   position: absolute;
+   height: 300px;
+   width: 100%;
+   background: rgba(0, 0, 0, .2);
+   top: 0;
+   left: 0;
+   transition: all .3s ease-in-out;
+   opacity: 0;
+}
+.myProducts .ig span button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #008BFF;
+    border: none;
+    padding: 7px 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.myProducts .ig span button:hover {
+    background-color: #006fcc;
+}
+.myProducts .describ {
+    margin-top: 20px;
+    color: #9C9C9C;
+}
+.myProducts .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myProducts .price {
+    color: #008BFF;
+    font-weight: bolder;
+}
+.myProducts .info i {
+    color: #FEC800;
+}
+.myProducts .add {
+    width: 100%;
+    background: #8EC53F;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.myProducts  .add:hover {
+    box-shadow: inset 0 -8px 16px #6fab0f;
+}
+/*End products*/
